@@ -6,15 +6,22 @@ Hello World [[Map]]
 
 :: Map
 <div id="map" style="height:400px"></div>
-<script>
+<<script>>
 var map = L.map('map');
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
 fetch('https://router.project-osrm.org/route/v1/driving/9.1792,45.4709;9.2059,45.477?overview=full&geometries=geojson')
   .then(r => r.json())
-  .then(d => { const c = d.routes[0].geometry.coordinates.map(p => [p[1], p[0]]); const r = L.polyline(c, { color: 'blue' }).addTo(map); map.fitBounds(r.getBounds()); });
+  .then(d => {
+    const coords = d.routes[0].geometry.coordinates.map(p => [p[1], p[0]]);
+    const route = L.polyline(coords, { color: 'blue' }).addTo(map);
+    map.fitBounds(route.getBounds());
+  });
 if (navigator.geolocation) {
   navigator.geolocation.watchPosition(pos => {
-    const lat = pos.coords.latitude, lon = pos.coords.longitude;
+    const lat = pos.coords.latitude,
+          lon = pos.coords.longitude;
     if (!window.userMarker) {
       window.userMarker = L.marker([lat, lon]).addTo(map);
     } else {
@@ -22,7 +29,7 @@ if (navigator.geolocation) {
     }
   });
 }
-</script>
+<</script>>
 
 :: StoryData
 {
