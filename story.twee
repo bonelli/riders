@@ -1,0 +1,10 @@
+:: StoryTitle
+Hello Twine
+
+:: Start
+Hello World
+
+:: StoryData
+{
+    "ifid": "20AC41D0-5AC5-45E6-B5F1-E589F9463D12"
+}
