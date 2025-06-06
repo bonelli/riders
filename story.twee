@@ -2,7 +2,8 @@
 Hello Twine
 
 :: Start
-Hello World [[Map]]
+<<goto "Map">>
+
 
 :: Map
 <div id="map" style="height:400px"></div>
@@ -12,11 +13,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 const coords = [
-  [45.4709, 9.1792],
-  [45.4721, 9.184],
-  [45.4743, 9.193],
-  [45.4765, 9.200],
-  [45.4770, 9.2059]
+  [45.469749, 9.177232],
+  [45.467954, 9.176783],
+  [45.467605, 9.179344],
+  [45.467811, 9.181364],
+  [45.467965, 9.182534],
+  [45.468607, 9.183137],
+  [45.469339, 9.189987],
+  [45.470763, 9.193483],
+  [45.472735, 9.195862],
+  [45.472506, 9.201141],
+  [45.474470, 9.205105]
 ];
 const route = L.polyline(coords, { color: 'blue' }).addTo(map);
 map.fitBounds(route.getBounds());
