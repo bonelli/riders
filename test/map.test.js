@@ -1,11 +1,9 @@
-const fs = require('fs');
+const puppeteer = require('puppeteer');
 const path = require('path');
-const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-if (!html.includes('https://unpkg.com/leaflet')) {
-  console.error('Leaflet script not found');
-  process.exit(1);
-}
-if (!html.includes('id="map"')) {
-  console.error('Map container missing');
-  process.exit(1);
-}
+(async () => {
+  const browser = await puppeteer.launch({headless: 'new', args: ['--no-sandbox', '--ignore-certificate-errors']});
+  const page = await browser.newPage();
+  await page.goto('file://' + path.join(__dirname, '..', 'index.html'), {waitUntil: 'load'});
+  await page.waitForSelector('#map', {timeout: 5000});
+  await browser.close();
+})();

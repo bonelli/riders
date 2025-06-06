@@ -28,7 +28,7 @@ const coords = [
 const route = L.polyline(coords, { color: 'blue' }).addTo(map);
 map.fitBounds(route.getBounds());
 if (navigator.geolocation) {
-  navigator.geolocation.watchPosition(pos => {
+  navigator.geolocation.watchPosition(function (pos) {
     const lat = pos.coords.latitude,
           lon = pos.coords.longitude;
     if (!window.userMarker) {
