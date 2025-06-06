@@ -11,13 +11,15 @@ var map = L.map('map');
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
-fetch('https://router.project-osrm.org/route/v1/driving/9.1792,45.4709;9.2059,45.477?overview=full&geometries=geojson')
-  .then(r => r.json())
-  .then(d => {
-    const coords = d.routes[0].geometry.coordinates.map(p => [p[1], p[0]]);
-    const route = L.polyline(coords, { color: 'blue' }).addTo(map);
-    map.fitBounds(route.getBounds());
-  });
+const coords = [
+  [45.4709, 9.1792],
+  [45.4721, 9.184],
+  [45.4743, 9.193],
+  [45.4765, 9.200],
+  [45.4770, 9.2059]
+];
+const route = L.polyline(coords, { color: 'blue' }).addTo(map);
+map.fitBounds(route.getBounds());
 if (navigator.geolocation) {
   navigator.geolocation.watchPosition(pos => {
     const lat = pos.coords.latitude,
