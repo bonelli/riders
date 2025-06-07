@@ -3,40 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>RIDERS</title>
+<title>RIDERS DEF</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play RIDERS.</tw-noscript></noscript></tw-story>
-<!-- UUID://36E7B8EF-EDF2-4BB4-A57A-609F961E0C51// --><tw-storydata name="RIDERS" startnode="2" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="36E7B8EF-EDF2-4BB4-A57A-609F961E0C51" zoom="0.6" format="Harlowe" format-version="3.3.9" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-@font-face{font-family:'CC'; src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');}
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play RIDERS DEF.</tw-noscript></noscript></tw-story>
+<!-- UUID://36E7B8EF-EDF2-4BB4-A57A-609F961E0C51// --><tw-storydata name="RIDERS DEF" startnode="5" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="36E7B8EF-EDF2-4BB4-A57A-609F961E0C51" zoom="0.6" format="Harlowe" format-version="3.3.9" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face{font-family:'CC'; src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');}
 
 tw-story{
   background-color: #27b5e2;
 	font-family: 'CC', sans-serif;
 	/* This makes the font size for normal letters just a little bit bigger than default */
 	font-size: 2em;
-}
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="BELL 1" tags="" position="1100,700" size="100,100">(set: $typewriterText to &quot;There’s an order for you.                        
+When you get there, come back to the app.
+&quot;)
 
-html.arctic {
-      background-color: white;
-  color: blue
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="GO ONLINE" tags="" position="125,550" size="100,100">&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_MAP_1&#39;)]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="2" name="BELL 2" tags="" position="1100,950" size="100,100">(set: $typewriterText to &quot;Now focus on the road, someone is waiting for you.
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200&gt;&quot; )[(goto: &#39;ROUTE_1_MAP_2&#39;)]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="3" name="BELL 3" tags="" position="1100,1325" size="100,100">&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200&gt;</tw-passagedata><tw-passagedata pid="4" name="GO ONLINE" tags="" position="125,550" size="100,100">&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
 width=200&gt;
 
 
-(live: 3s)[(goto: &quot;ROUTE_1_01&quot;)]</tw-passagedata><tw-passagedata pid="2" name="Passaggio senza titolo" tags="" position="100,100" size="100,100">&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+(live: 3s)[(goto: &quot;ROUTE_1_01&quot;)]</tw-passagedata><tw-passagedata pid="5" name="LOADING" tags="" position="125,75" size="100,100">&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png 
 width=200&gt;
+&lt;img src=&quot;https://i.ibb.co/YBGgFPdj/vecteezy-transparent-loading-spinner-video-29870031.gif &quot;width=150&gt;
 
-
-(live: 3s)[(goto: &quot;SETUP_1&quot;)]</tw-passagedata><tw-passagedata pid="3" name="ROUTE_1_01" tags="" position="375,700" size="100,100">(set: $typewriterText to &quot;My name is Saqib Zia, Muhammad Saqib Zia.
+(live:4s)[(go-to: &#39;SETUP_1&#39;)]</tw-passagedata><tw-passagedata pid="6" name="ROUTE_1_01" tags="" position="375,700" size="100,100">(set: $typewriterText to &quot;My name is Saqib Zia, Muhammad Saqib Zia.
                       
 I&#39;m like nearly 40 year old.&quot;)
 
@@ -65,7 +105,7 @@ I&#39;m like nearly 40 year old.&quot;)
 
 &lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3&quot;autoplay&gt;
 
-(live: 8500ms)[(goto: &quot;ROUTE_1_02&quot;)]</tw-passagedata><tw-passagedata pid="4" name="ROUTE_1_02" tags="" position="525,700" size="100,100">(set: $typewriterText to &quot;Basically I&#39;m from Kashmir, the part of - you know - Pakistan, because Kashmir is divided in two parts.
+(live: 8500ms)[(goto: &quot;ROUTE_1_02&quot;)]</tw-passagedata><tw-passagedata pid="7" name="ROUTE_1_02" tags="" position="525,700" size="100,100">(set: $typewriterText to &quot;Basically I&#39;m from Kashmir, the part of - you know - Pakistan, because Kashmir is divided in two parts.
                                                                                         
 One is in under the control of India and one is under the control of Pakistan. 
                     
@@ -96,8 +136,9 @@ So basically I&#39;m from Kashmir, Pakistan. &quot;)
 
 &lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_02.mp3&quot;autoplay&gt;
 
-(live: 19500ms)[(goto: &quot;ROUTE_1_03&quot;)]</tw-passagedata><tw-passagedata pid="5" name="ROUTE_1_03" tags="" position="675,700" size="100,100">(set: $typewriterText to &quot;When I start the work, so I came to the train station in Domodossola,                                                     when I exit that train station,                                                       so I login in my application and then I was, you know, waiting for the orders.                                                         
+(live: 19500ms)[(goto: &quot;ROUTE_1_03&quot;)]</tw-passagedata><tw-passagedata pid="8" name="ROUTE_1_03" tags="" position="675,700" size="100,100">(set: $typewriterText to &quot;When I start the work, so I came to the train station in Domodossola,                                                     when I exit that train station,                                                       so I login in my application and then I was, you know, waiting for the orders.                                                         
 So it&#39;s the online system.                   
+
 So whenever the order will come,                                            so I have to go for the pick up the order and then I need to go to the customer address.                                        
 So the whole day like you know this.                        So we are basically not sitting in a one place. &quot;)
 
@@ -126,9 +167,11 @@ So the whole day like you know this.                        So we are basically 
 
 &lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_03.mp3&quot;autoplay&gt;
 
-(live: 36500ms)[(goto: &quot;ROUTE_1_04&quot;)]</tw-passagedata><tw-passagedata pid="6" name="ROUTE_1_04" tags="" position="825,700" size="100,100">(set: $typewriterText to &quot;So if I&#39;m sitting here for example,       so 10-15 minute or 20 minute, I will see that order is not coming.                                                                         
+(live: 36500ms)[(goto: &quot;ROUTE_1_04&quot;)]</tw-passagedata><tw-passagedata pid="9" name="ROUTE_1_04" tags="" position="825,700" size="100,100">(set: $typewriterText to &quot;So if I&#39;m sitting here for example,       so 10-15 minutes or 20 minutes, I will see that order is not coming.                                                                         
 So I will move to the another place.                                                          
-So in the whole day we are basically, you know, the running in the whole Milan that for finding the orders.                                                                   
+                           
+So in the whole day we are basically, you know, the running in the whole Milan that for finding the orders.                                                                              
+
 So this is the thing in the lunch time we have a little bit of work                   and like you know, like 12 to midday, 12:00 to 2:00 we have the work.                     
 So two to six we don&#39;t have the much work.  &quot;)
 
@@ -157,7 +200,10 @@ So two to six we don&#39;t have the much work.  &quot;)
 
 &lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_04.mp3&quot;autoplay&gt;
 
-(live: 37500ms)[(goto: &quot;ROUTE_1_05&quot;)]</tw-passagedata><tw-passagedata pid="7" name="ROUTE_1_05" tags="" position="975,700" size="100,100">(set: $typewriterText to &quot;So we are, you know, finding the order and in the evening we have the comfortable work that you know,                                   we can whenever you will deliver the one order so you can get the another order,                                        you know, like after 2-3 minutes or sometime you know, if it&#39;s busy, the zone is busy.                                 So you can you know, get the order straight away.                        Whenever you will deliver the 1st order to 2nd order will come straight away.&quot;)
+(live: 38000ms)[(goto: &quot;ROUTE_1_05&quot;)]</tw-passagedata><tw-passagedata pid="10" name="ROUTE_1_05" tags="" position="975,700" size="100,100">(set: $typewriterText to &quot;So we are, you know, finding the order and in the evening we have the comfortable work that you know,                                   we can whenever you will deliver the one order so you can get the another order,                                        you know, like after 2-3 minutes or sometime you know, if it&#39;s busy, the zone is busy.                                 
+
+So you can you know, get the order straight away.                        
+Whenever you will deliver the 1st order to 2nd order will come straight away.&quot;)
 
 {
   
@@ -184,251 +230,11 @@ So two to six we don&#39;t have the much work.  &quot;)
 
 &lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_05.mp3&quot;autoplay&gt;
 
-(live: 33000ms)[(goto: &quot;BELL 1&quot;)]</tw-passagedata><tw-passagedata pid="8" name="ROUTE_1_MAP_1" tags="" position="225,825" size="100,100">(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
-width=300&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp;destination=GiardinoAmbrogioFogar&amp;destination_place_id=ChIJlbqibPzDhkcRv5B1fW4DDQE&amp;travelmode=bicycling&#39;)]
-
-(live: 10s)[(goto: &quot;SETUP_9&quot;)]</tw-passagedata><tw-passagedata pid="9" name="SETUP_1" tags="" position="250,100" size="100,100">(set: $typewriterText to &quot;Welcome!                    
-Before you start your journey, here are some quick tips                       &quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 6000ms)[(goto: &quot;SETUP_2&quot;)]</tw-passagedata><tw-passagedata pid="10" name="SETUP_2" tags="" position="400,100" size="100,100">(set: $typewriterText to &quot;Our organisation will provide you with a phone holder; 
-               attach it to your bike.          
-               then tap here             
-                          ↓
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/GvJgSzQS/Riders-Bike-animation.gif
-width=450&gt;&quot; )[(go-to: &#39;SETUP_3&#39;)]
-      ]
-    ]
-}</tw-passagedata><tw-passagedata pid="11" name="SETUP_3" tags="" position="550,100" size="100,100">(set: $typewriterText to &quot;Connect your headphones to your phone.                      
-Check that they work with your favourite song.    
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/3m1z9M0S/earphones.png
-width=200&gt;&quot; )[(go-to: &#39;SETUP_4&#39;)]
-      ]
-    ]
-}</tw-passagedata><tw-passagedata pid="12" name="SETUP_4" tags="" position="700,100" size="100,100">(set: $typewriterText to &quot;If everything works, you can start navigating our app!
-           Here is a practical guide to use it.&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 8000ms)[(goto: &quot;SETUP_5&quot;)]</tw-passagedata><tw-passagedata pid="13" name="SETUP_5" tags="" position="850,100" size="100,100">(set: $typewriterText to &quot;If you get lost at anytime, please call this phone number   
-
-+39 333 361 6664            
-
-
-copy it and save it
-before tapping on the phone icon
-
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/4wJRgq9w/phone.png
-width=200&gt;&quot; )[(goto: &quot;SETUP_6&quot;)]
-      ]
-    ]
-}</tw-passagedata><tw-passagedata pid="14" name="SETUP_6" tags="" position="1000,100" size="100,100">(set: $typewriterText to &quot;Navigating within this interface you will find written directions and maps.                       
-Once you tap on the map you will be redirected to your Maps app for directions.                   &quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 9s)[(goto: &quot;SETUP_7&quot;)]</tw-passagedata><tw-passagedata pid="15" name="SETUP_7" tags="" position="250,225" size="100,100">(set: $typewriterText to &quot;Follow them carefully.
-Then when you get to destination, please navigate back to the app
-and wait a few seconds.
-                      
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
-width=200&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp;destination=PTA GenovaFS&amp;destination_place_id=ChIJIT3P3_rDhkcRuw4D2gcgttc&amp;travelmode=bicycling &#39;)]
-      ]
-    ]
-}
-
-(live: 25s)[(goto: &quot;SETUP_8&quot;)]</tw-passagedata><tw-passagedata pid="16" name="SETUP_8" tags="" position="400,225" size="100,100">(set: $typewriterText to &quot;That&#39;s great! Now you are ready to go online.
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200&gt;&quot; )[(go-to: &#39;GO ONLINE&#39;)]
-      ]
-    ]
-}</tw-passagedata><tw-passagedata pid="17" name="SETUP_9" tags="" position="375,825" size="100,100">(set: $typewriterText to &quot;Are you ready?
-&quot;)
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_06&#39;)]
-      ]
-    ]
-}</tw-passagedata><tw-passagedata pid="18" name="ROUTE_1_06" tags="" position="525,825" size="100,100">(set: $typewriterText to &quot;From six years I&#39;m here.                         Yeah, from six years.                                       
+(live: 32000ms)[(goto: &quot;BELL 1&quot;)]</tw-passagedata><tw-passagedata pid="11" name="ROUTE_1_06" tags="" position="525,825" size="100,100">(set: $typewriterText to &quot;From six years I&#39;m here.                         Yeah, from six years.                                       
 In 2018, I came here in Italy.                                                                             
 
-Yeah, first I came in Milano.                            Yeah, that&#39;s my first city, Milan. 
+Yeah, first I came in Milano.                                                               
+Yeah, that&#39;s my first city, Milan. 
 &quot;)
 
 {
@@ -456,11 +262,12 @@ Yeah, first I came in Milano.                            Yeah, that&#39;s my fir
 
 &lt;audio src=&quot;https://ia600902.us.archive.org/27/items/route-1-14/Route%201_06.mp3&quot;autoplay&gt;
 
-(live: 20000ms)[(goto: &quot;ROUTE_1_07&quot;)]</tw-passagedata><tw-passagedata pid="19" name="ROUTE_1_07" tags="" position="675,825" size="100,100">(set: $typewriterText to &quot;The natural beauty      in Italy.    It&#39;s amazing.                                                          
-Also, you know, Italy is a historical country.                                                                             
-So wherever you will go, like Milan, like Como,                      like Torino, Bologna, Roma            or Sicily, wherever you will go, you can find the history,                          the old history.                                           
+(live: 20000ms)[(goto: &quot;ROUTE_1_07&quot;)]</tw-passagedata><tw-passagedata pid="12" name="ROUTE_1_07" tags="" position="675,825" size="100,100">(set: $typewriterText to &quot;The natural beauty      in Italy.    It&#39;s amazing.                                                                                                     
+Also, you know, Italy is a historical country.                                                                                             
+So wherever you will go, like Milan, like Como,                              like Torino, Bologna, Roma                 or Sicily, wherever you will go, you can find the history,                          the old history.                                           
 So also it&#39;s naturally very rich.                                             
-This is very rich country by the nature.                                You can find the greenery, you can find the trees, you can find the, you know, different things.                            
+This is very rich country by the nature.                                
+You can find the greenery, you can find the trees, you can find the, you know, different things.                            
 And especially the Italian people, they are very good. 
 
 &quot;)
@@ -490,9 +297,9 @@ And especially the Italian people, they are very good.
 
 &lt;audio src=&quot;https://ia600902.us.archive.org/27/items/route-1-14/Route%201_07.mp3&quot;autoplay&gt;
 
-(live: 40000ms)[(goto: &quot;ROUTE_1_08&quot;)]</tw-passagedata><tw-passagedata pid="20" name="ROUTE_1_08" tags="" position="825,825" size="100,100">(set: $typewriterText to &quot;Very, you know,                                                            I&#39;m saying to my friends who are living, you know, in different countries.                           So I&#39;m saying that, you know,                                            if you want to see the humanity in the world, you can see in Italy,                                          the Italian people, they respect.               
+(live: 40000ms)[(goto: &quot;ROUTE_1_08&quot;)]</tw-passagedata><tw-passagedata pid="13" name="ROUTE_1_08" tags="" position="825,825" size="100,100">(set: $typewriterText to &quot;Very, you know,                                                            I&#39;m saying to my friends who are living, you know, in different countries.                           So I&#39;m saying that, you know,                                            if you want to see the humanity in the world, you can see in Italy,                                          the Italian people, they respect.               
 Of course, we face something, you know, sometimes we face the some rude people as well but,                        you know, that Italian people are very good.                                
-They are very gentlemen.                                   
+They are very gentlemen.                          
 They are very good, nice people.
  
 
@@ -523,10 +330,11 @@ They are very good, nice people.
 
 &lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_08.mp3&quot;autoplay&gt;
 
-(live: 30500ms)[(goto: &quot;ROUTE_1_09&quot;)]</tw-passagedata><tw-passagedata pid="21" name="ROUTE_1_09" tags="" position="975,825" size="100,100">(set: $typewriterText to &quot;In Urdu language, I can say that it&#39;s the Kudrati Hosan.                                                  
+(live: 31000ms)[(goto: &quot;ROUTE_1_09&quot;)]</tw-passagedata><tw-passagedata pid="14" name="ROUTE_1_09" tags="" position="975,825" size="100,100">(set: $typewriterText to &quot;In Urdu language, I can say that it&#39;s the Kudrati Hosan.                                                  
 The Kudrati Hosan,                  the beauty of the nature. Yeah.                                   
 Because you know, if you will find the,            you know, trees or green trees or, you know,                    the uphill, downhill.                                    
-Basically it&#39;s make the nature                         not any person you know can,               you know simply he can build                the uphill or downhill or you know,                 these sorts of things.                            It&#39;s built by nature.
+Basically it&#39;s make the nature                         not any person you know can,               you know simply he can build                the uphill or downhill or you know,                 these sorts of things.                            
+It&#39;s built by nature.
 &quot;)
 
 {
@@ -554,7 +362,7 @@ Basically it&#39;s make the nature                         not any person you kn
 
 &lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_09.mp3&quot;autoplay&gt;
 
-(live: 34000ms)[(goto: &quot;ROUTE_1_10&quot;)]</tw-passagedata><tw-passagedata pid="22" name="ROUTE_1_10" tags="" position="225,950" size="100,100">(set: $typewriterText to &quot;My home country basically,                                       you know, Kashmir is a paradise on earth because in if you will see the history and many of the books,                                        whoever writes it, like, you know, in different countries,                              they, describe the history of Kashmir. 
+(live: 34000ms)[(goto: &quot;ROUTE_1_10&quot;)]</tw-passagedata><tw-passagedata pid="15" name="ROUTE_1_10" tags="" position="225,950" size="100,100">(set: $typewriterText to &quot;My home country basically,                                       you know, Kashmir is a paradise on earth because in if you will see the history and many of the books,                                        whoever writes it, like, you know, in different countries,                              they, describe the history of Kashmir. 
 &quot;)
 
 {
@@ -582,9 +390,11 @@ Basically it&#39;s make the nature                         not any person you kn
 
 &lt;audio src=&quot;https://ia600902.us.archive.org/27/items/route-1-14/Route%201_10.mp3&quot;autoplay&gt;
 
-(live: 19000ms)[(goto: &quot;ROUTE_1_11&quot;)]</tw-passagedata><tw-passagedata pid="23" name="ROUTE_1_11" tags="" position="375,950" size="100,100">(set: $typewriterText to &quot;It&#39;s like paradise on Earth,                           Kashmir has been called a paradise enough.                      
+(live: 19000ms)[(goto: &quot;ROUTE_1_11&quot;)]</tw-passagedata><tw-passagedata pid="16" name="ROUTE_1_11" tags="" position="375,950" size="100,100">(set: $typewriterText to &quot;It&#39;s like paradise on Earth,                           Kashmir has been called a paradise enough.                      
 So it&#39;s like, you know, same like, you know, Switzerland, if you will see Switzerland, it&#39;s more beautiful than Switzerland.                                                                        
-But you know, during the war, everything was, you know, destroyed.                                          So because these two countries,                                       they can&#39;t build the state of Kashmir. 
+
+But you know, during the war, everything was, you know, destroyed.                                          
+So because these two countries,                                       they can&#39;t build the state of Kashmir. 
 &quot;)
 
 {
@@ -612,7 +422,8 @@ But you know, during the war, everything was, you know, destroyed.              
 
 &lt;audio src=&quot;https://ia600902.us.archive.org/27/items/route-1-14/Route%201_11.mp3&quot;autoplay&gt;
 
-(live: 30000ms)[(goto: &quot;ROUTE_1_12&quot;)]</tw-passagedata><tw-passagedata pid="24" name="ROUTE_1_12" tags="" position="525,950" size="100,100">(set: $typewriterText to &quot;So it&#39;s really naturally very beautiful. Kashmir is naturally very beautiful.                                                        
+(live: 30000ms)[(goto: &quot;ROUTE_1_12&quot;)]</tw-passagedata><tw-passagedata pid="17" name="ROUTE_1_12" tags="" position="525,950" size="100,100">(set: $typewriterText to &quot;So it&#39;s really naturally very beautiful. Kashmir is naturally very beautiful.                                                        
+
 You can see the greenery,                               you can see the trees. You can see the like,                         you know, the sea, you can see the river                                     and ignore the very beautiful nature in Kashmir you can find.
 &quot;)
 
@@ -641,8 +452,9 @@ You can see the greenery,                               you can see the trees. Y
 
 &lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_12.mp3&quot;autoplay&gt;
 
-(live: 22000ms)[(goto: &quot;ROUTE_1_13&quot;)]</tw-passagedata><tw-passagedata pid="25" name="ROUTE_1_13" tags="" position="675,950" size="100,100">(set: $typewriterText to &quot;Aza Aza, Jammu                    in Kashmir, so cities,                          Hajira, Ravla code, Yeah.                                                   
+(live: 22000ms)[(goto: &quot;ROUTE_1_13&quot;)]</tw-passagedata><tw-passagedata pid="18" name="ROUTE_1_13" tags="" position="675,950" size="100,100">(set: $typewriterText to &quot;Aza Aza, Jammu                    in Kashmir, so cities,                          Hajira, Ravla code, Yeah.                                                   
 Where recently you can see that, you know,                  the war between India and Pakistan.                             
+
 So I&#39;m exactly in the borderline of India.
 &quot;)
 
@@ -671,38 +483,10 @@ So I&#39;m exactly in the borderline of India.
 
 &lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_13.mp3&quot;autoplay&gt;
 
-(live: 18000ms)[(goto: &quot;ROUTE_1_14&quot;)]</tw-passagedata><tw-passagedata pid="26" name="ROUTE_1_15" tags="" position="975,950" size="100,100">(set: $typewriterText to &quot;And then, you know,                   the innocent Kashmiris are, you know,                  
-going to be killed.
-&quot;)
+(live: 18000ms)[(goto: &quot;ROUTE_1_14&quot;)]</tw-passagedata><tw-passagedata pid="19" name="ROUTE_1_14" tags="" position="825,950" size="100,100">(set: $typewriterText to &quot;                I have My family.       I have my wife, my small daughter, and I have my mother, my brothers, sisters.                                                                                                                                                                                                                          
+It’s better but, you know, in the recent conflict                                                     between India and Pakistan,                           the war conflict                                                                                                                               the system was, you know, totally terrifying.                                                      
 
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput&gt;[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
-      (stop:)
-    ]
-  ]
-}
-
-&lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_15.mp3&quot;autoplay&gt;
-
-(live: 9000ms)[(goto: &quot;BELL 2&quot;)]</tw-passagedata><tw-passagedata pid="27" name="ROUTE_1_14" tags="" position="825,950" size="100,100">(set: $typewriterText to &quot;                I have My family.       I have my wife, my small daughter, and I have my mother, my brothers, sisters.                                                                                                                     
-It’s better but, you know, in the recent conflict                                   between India and Pakistan,                           the war conflict                                                         the system was, you know, totally terrifying.                 
-So it&#39;s quite,                                  you know,               very dangerous for us,                                 especially for the Kashmiri                 because India and Pakistan both are fighting with each other. 
+So it&#39;s quite,           you know,               very dangerous for us,                                 especially for the Kashmiri            because India and Pakistan both are fighting with each other. 
 
 &quot;)
 
@@ -731,8 +515,8 @@ So it&#39;s quite,                                  you know,               very
 
 &lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_14.mp3&quot;autoplay&gt;
 
-(live: 39000ms)[(goto: &quot;ROUTE_1_15&quot;)]</tw-passagedata><tw-passagedata pid="28" name="BELL 1" tags="" position="1100,700" size="100,100">(set: $typewriterText to &quot;There’s an order for you.                        
-When you get there, come back to the app.
+(live: 39000ms)[(goto: &quot;ROUTE_1_15&quot;)]</tw-passagedata><tw-passagedata pid="20" name="ROUTE_1_15" tags="" position="975,950" size="100,100">(set: $typewriterText to &quot;And then, you know,                   the innocent Kashmiris are, you know,                  
+going to be killed.
 &quot;)
 
 {
@@ -752,14 +536,19 @@ When you get there, come back to the app.
     (set: $typewriterPos to it + 1)
 
    
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_MAP_1&#39;)]
-      ]
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
     ]
+  ]
 }
 
-(live: 25s)[(goto: &quot;SETUP_9&quot;)]</tw-passagedata><tw-passagedata pid="29" name="BELL 2" tags="" position="1100,950" size="100,100">(set: $typewriterText to &quot;Now focus on the road, someone is waiting for you.
+&lt;audio src=&quot;https://ia800902.us.archive.org/27/items/route-1-14/Route%201_15.mp3&quot;autoplay&gt;
+
+(live: 9000ms)[(goto: &quot;BELL 2&quot;)]</tw-passagedata><tw-passagedata pid="21" name="ROUTE_1_16" tags="" position="525,1075" size="100,100">(set: $typewriterText to &quot;       It&#39;s                               basically it&#39;s the self-employment and then it&#39;s more comfortable for me that,                      you know, I can start work with my own timing and I don&#39;t have any boss.                                                                      
+So this is the main thing.                                                           So I think it&#39;s more better because when you when you work with the under the control of the boss.                                                          
+So it&#39;s a bit, you know, hard to work because you know, the,                                                                          
+that you know, you are working in the under the pressure. 
+
 &quot;)
 
 {
@@ -779,17 +568,315 @@ width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_MAP_1&#39;)]
     (set: $typewriterPos to it + 1)
 
    
-    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
-      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_MAP_1&#39;)]
-      ]
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
     ]
+  ]
 }
 
-(live: 25s)[(goto: &quot;SETUP_9&quot;)]</tw-passagedata><tw-passagedata pid="30" name="ROUTE_1_MAP_2" tags="" position="225,1100" size="100,100">(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
+&lt;audio src=&quot;https://ia800908.us.archive.org/13/items/route-1-20/Route%201_16.mp3&quot;autoplay&gt;
+
+(live: 36000ms)[(goto: &quot;ROUTE_1_17&quot;)]</tw-passagedata><tw-passagedata pid="22" name="ROUTE_1_17" tags="" position="675,1075" size="100,100">(set: $typewriterText to &quot;So                          you know that my boss is, you know, watching me and like,                 you know something,                         
+but it&#39;s under the control of someone working. 
+It&#39;s hard.                                  
+So when you will do the self-employment or you when you have the on work,            
+so you are feeling more comfortable. 
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_17.mp3&quot;autoplay&gt;
+
+(live: 16000ms)[(goto: &quot;ROUTE_1_18&quot;)]</tw-passagedata><tw-passagedata pid="23" name="ROUTE_1_18" tags="" position="825,1075" size="100,100">(set: $typewriterText to &quot;You can talk with anyone or you can,                               you know, you can do whatever you want.                                         
+If, if I want to go somewhere, for example, I came here.                               
+So if I want to close my application, I want to close my work so I can close easily.                                                              
+But if I will work under the control of the boss it&#39;s very hard to leave the job.                                      
+So these are the main things that, you know, I like to work this one by, you know, it&#39;s, it&#39;s not like a,                                                                             
+it&#39;s not much good,                but it&#39;s just for my flexibility and work.
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_18.mp3&quot;autoplay&gt;
+
+(live: 35000ms)[(goto: &quot;ROUTE_1_19&quot;)]</tw-passagedata><tw-passagedata pid="24" name="ROUTE_1_19" tags="" position="975,1075" size="100,100">(set: $typewriterText to &quot;Yeah, there is many negative things                           because on the road we are really not safe                                                   because, you know, in the rain, especially these two wheels,                               
+it&#39;s very hard to deliver or it&#39;s very hard to ride the bicycle.                                                     
+So in last, in January 19th, I had the accident. Yeah.                                
+So the one person, he suddenly opened the the door of the car                               and I was hit with the car.
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_19.mp3&quot;autoplay&gt;
+
+(live: 37000ms)[(goto: &quot;ROUTE_1_20&quot;)]</tw-passagedata><tw-passagedata pid="25" name="ROUTE_1_20" tags="" position="375,1200" size="100,100">(set: $typewriterText to &quot; I had my injury here in this side.                                
+And then, you know, the ambulance came and they take me to the hospital and, you know, 8 or 9 days I was at home, I couldn&#39;t come in the park.                                                            
+So these sorts of things, of course we are facing, we are on the road.                          
+So the most, you know, the, the parked car, the, the people who suddenly open the door, that&#39;s very dangerous.                                  
+Many of my friends, you know, they the same, you know, they face the accident                                                                                               suddenly opening the, the door of the car.                                                                   
+So this is also, you know, it&#39;s a big trouble for us when we when we are in the rain.                                   
+You can see that, you know, the, the some people are there very overspeed. 
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_20.mp3&quot;autoplay&gt;
+
+(live: 47000ms)[(goto: &quot;ROUTE_1_21&quot;)]</tw-passagedata><tw-passagedata pid="26" name="ROUTE_1_21" tags="" position="525,1200" size="100,100">(set: $typewriterText to &quot;And then, you know, over four or five riders                                                          I think from last two years they died.                                             
+Yeah, yeah, during the work they died.                                                 
+One was in, in, in end of December, in last December.                                                               
+He was, you know, he died near Corso Lodi.                    
+
+And before 2-3 months, you know, in the traffic lights, so the two riders, they were, you know, they died.                                                                
+So these sorts of things, you know,                                  we are facing very complicated and very hard during the ride.
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_21.mp3&quot;autoplay&gt;
+
+(live: 39000ms)[(goto: &quot;ROUTE_1_22&quot;)]</tw-passagedata><tw-passagedata pid="27" name="ROUTE_1_22" tags="" position="675,1200" size="100,100">(set: $typewriterText to &quot;Yeah of course, when we go to deliver                                  door to door                 the foods and groceries.                                                 
+So it&#39;s always for me to very memorable that when I seen the people,                       they are, you know, meeting us with a smile                        and they they saying us the thanks that thanks for the delivering the orders to.                                                  
+
+So these sorts of things is very,                                   you know,                        I&#39;m feeling very happy the people who are appreciated.                                
+
+But you know, some people are very rude, but you know, very less people, they are very rude in this work.                                     
+So we are sometimes we are working in the rain, so we are totally wet. 
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_22.mp3&quot;autoplay&gt;
+
+(live: 46000ms)[(goto: &quot;ROUTE_1_23&quot;)]</tw-passagedata><tw-passagedata pid="28" name="ROUTE_1_23" tags="" position="825,1200" size="100,100">(set: $typewriterText to &quot;And then, you know, they saying that no,                         you have to come upstairs and you have to deliver upstairs.                       
+So it&#39;s, you know, little bit, you know, complicated sometime. 
+                                                                 
+But you know, the, the many people they are very good.                                         
+When it&#39;s raining, we are wet.                                                         
+They know that, you know, the rider is coming and he&#39;s wet with the cloth.                     
+So they already come to the main gate when receive the orders. 
+
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_23.mp3&quot;autoplay&gt;
+
+(live: 24000ms)[(goto: &quot;ROUTE_1_24&quot;)]</tw-passagedata><tw-passagedata pid="29" name="ROUTE_1_24" tags="" position="975,1200" size="100,100">(set: $typewriterText to &quot;So when any person can smile.                                                            
+So I&#39;m feeling very happy that at least,                                    you know, give a good smile and say thanks to us.
+                                                                
+So this is, you know, memorable for me.
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+&lt;audio src=&quot;https://ia600908.us.archive.org/13/items/route-1-20/Route%201_24.mp3&quot;autoplay&gt;
+
+(live: 18000ms)[(goto: &quot;BELL 3&quot;)]</tw-passagedata><tw-passagedata pid="30" name="ROUTE_1_MAP_1" tags="" position="225,825" size="100,100">(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
+width=300&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp;destination=GiardinoAmbrogioFogar&amp;destination_place_id=ChIJlbqibPzDhkcRv5B1fW4DDQE&amp;travelmode=bicycling&#39;)]
+
+(live: 10s)[(goto: &quot;SETUP_9&quot;)]</tw-passagedata><tw-passagedata pid="31" name="ROUTE_1_MAP_2" tags="" position="225,1075" size="100,100">(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
 width=300&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp;destination=Piazza24Maggio&amp;destination_place_id=EiJQaWF6emEgMjQgTWFnZ2lvLCBNaWxhbm8gTUksIEl0YWx5Ii4qLAoUChIJWaF1agfEhkcROB9ry4HiRpQSFAoSCT2joctMwYZHEZAae21W3jCm&amp;travelmode=bicycling&#39;)]
 
-(live: 10s)[(goto: &quot;SETUP_10&quot;)]</tw-passagedata><tw-passagedata pid="31" name="SETUP_10" tags="" position="375,1100" size="100,100">(set: $typewriterText to &quot;Are you ready?
+(live: 10s)[(goto: &quot;SETUP_10&quot;)]</tw-passagedata><tw-passagedata pid="32" name="SETUP_1" tags="" position="425,75" size="100,100">(set: $typewriterText to &quot;Welcome!                    
+Before you start your journey, here are some quick tips            
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:) 
+      [[&gt;&gt;&gt;-&gt;SETUP_2]]
+    ]
+  ]
+}</tw-passagedata><tw-passagedata pid="33" name="SETUP_10" tags="" position="375,1075" size="100,100">(set: $typewriterText to &quot;Are you ready?
 &quot;)
 
 {
@@ -814,7 +901,224 @@ width=300&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp
 width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_16&#39;)]
       ]
     ]
-}</tw-passagedata><tw-passagedata pid="32" name="ROUTE_1_16" tags="" position="525,1100" size="100,100"></tw-passagedata></tw-storydata>
+}</tw-passagedata><tw-passagedata pid="34" name="SETUP_2" tags="" position="575,75" size="100,100">(set: $typewriterText to &quot;Our organisation will provide you a phone holder; 
+               attach it to your bike.                       
+        then tap here        
+      ↓              
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/GvJgSzQS/Riders-Bike-animation.gif
+width=450&gt;&quot; )[(go-to: &#39;SETUP_3&#39;)]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="35" name="SETUP_3" tags="" position="725,75" size="100,100">(set: $typewriterText to &quot;Connect your headphones to your phone.                      
+Check that they work by click below.
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/3m1z9M0S/earphones.png
+width=200&gt;&quot; )[&lt;audio src=&quot;https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3&quot;autoplay&gt;]
+(live:9s)[ If everything works we can [[MOVE ON -&gt;SETUP_4]]]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="36" name="SETUP_4" tags="" position="875,75" size="100,100">(set: $typewriterText to &quot;If everything works, you can start navigating our app!
+           Here is a practical guide to use it.
+           
+           &quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)[[LET&#39;S START-&gt;SETUP_5]]
+    ]
+  ]
+}</tw-passagedata><tw-passagedata pid="37" name="SETUP_5" tags="" position="1025,75" size="100,100">(set: $typewriterText to &quot;If you get lost at anytime, please call this phone number   
+
++39 333 361 6664            
+
+copy it and save it
+before tapping on the phone icon
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/4wJRgq9w/phone.png
+width=200&gt;&quot; )[(goto: &quot;SETUP_6&quot;)]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="38" name="SETUP_6" tags="" position="1175,75" size="100,100">(set: $typewriterText to &quot;Navigating within this interface you will find written directions and maps.                       
+Once you tap on the map you will be redirected to your Maps app for directions.         
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)[
+      (stop:)[[OK-&gt;SETUP_7]]
+    ]
+  ]
+}</tw-passagedata><tw-passagedata pid="39" name="SETUP_7" tags="" position="1325,75" size="100,100">(set: $typewriterText to &quot;Follow them carefully.
+Then when you get to destination, please navigate back to the app
+and wait a few seconds.
+                      
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/rKM9xqdH/map.png
+width=200&gt;&quot; )[(goto-url: &#39;https://www.google.com/maps/dir/?api=1&amp;destination=PTA GenovaFS&amp;destination_place_id=ChIJIT3P3_rDhkcRuw4D2gcgttc&amp;travelmode=bicycling &#39;)]
+      ]
+    ]
+}
+
+(live: 25s)[(goto: &quot;SETUP_8&quot;)]</tw-passagedata><tw-passagedata pid="40" name="SETUP_8" tags="" position="1150,225" size="100,100">(set: $typewriterText to &quot;That&#39;s great! Now you are ready!
+
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)[[GO ONLINE-&gt;GO ONLINE]]
+      ]
+    ]
+}</tw-passagedata><tw-passagedata pid="41" name="SETUP_9" tags="" position="375,825" size="100,100">(set: $typewriterText to &quot;Are you ready?
+&quot;)
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput&gt;[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText&#39;s length + 1)  [
+      (stop:)(link: &quot;&lt;img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200&gt;&quot; )[(go-to: &#39;ROUTE_1_06&#39;)]
+      ]
+    ]
+}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

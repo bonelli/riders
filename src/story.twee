@@ -1,5 +1,5 @@
 :: StoryTitle
-RIDERS
+RIDERS DEF
 
 
 :: StoryData
@@ -7,19 +7,12 @@ RIDERS
 	"ifid": "36E7B8EF-EDF2-4BB4-A57A-609F961E0C51",
 	"format": "Harlowe",
 	"format-version": "3.3.9",
-	"start": "Passaggio senza titolo",
+	"start": "LOADING",
 	"zoom": 0.6
 }
 
 
 :: Story Stylesheet [stylesheet]
-.passage img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 @font-face{font-family:'CC'; src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');}
 
 tw-story{
@@ -29,10 +22,69 @@ tw-story{
 	font-size: 2em;
 }
 
-html.arctic {
-      background-color: white;
-  color: blue
+
+:: BELL 1 {"position":"1100,700","size":"100,100"}
+(set: $typewriterText to "There’s an order for you.                        
+When you get there, come back to the app.
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200>" )[(go-to: 'ROUTE_1_MAP_1')]
+      ]
+    ]
 }
+
+
+:: BELL 2 {"position":"1100,950","size":"100,100"}
+(set: $typewriterText to "Now focus on the road, someone is waiting for you.
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200>" )[(goto: 'ROUTE_1_MAP_2')]
+      ]
+    ]
+}
+
+
+:: BELL 3 {"position":"1100,1325","size":"100,100"}
+<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200>
 
 
 :: GO ONLINE {"position":"125,550","size":"100,100"}
@@ -43,12 +95,12 @@ width=200>
 (live: 3s)[(goto: "ROUTE_1_01")]
 
 
-:: Passaggio senza titolo {"position":"100,100","size":"100,100"}
-<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+:: LOADING {"position":"125,75","size":"100,100"}
+<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png 
 width=200>
+<img src="https://i.ibb.co/YBGgFPdj/vecteezy-transparent-loading-spinner-video-29870031.gif "width=150>
 
-
-(live: 3s)[(goto: "SETUP_1")]
+(live:4s)[(go-to: 'SETUP_1')]
 
 
 :: ROUTE_1_01 {"position":"375,700","size":"100,100"}
@@ -122,6 +174,7 @@ So basically I'm from Kashmir, Pakistan. ")
 :: ROUTE_1_03 {"position":"675,700","size":"100,100"}
 (set: $typewriterText to "When I start the work, so I came to the train station in Domodossola,                                                     when I exit that train station,                                                       so I login in my application and then I was, you know, waiting for the orders.                                                         
 So it's the online system.                   
+
 So whenever the order will come,                                            so I have to go for the pick up the order and then I need to go to the customer address.                                        
 So the whole day like you know this.                        So we are basically not sitting in a one place. ")
 
@@ -154,9 +207,11 @@ So the whole day like you know this.                        So we are basically 
 
 
 :: ROUTE_1_04 {"position":"825,700","size":"100,100"}
-(set: $typewriterText to "So if I'm sitting here for example,       so 10-15 minute or 20 minute, I will see that order is not coming.                                                                         
+(set: $typewriterText to "So if I'm sitting here for example,       so 10-15 minutes or 20 minutes, I will see that order is not coming.                                                                         
 So I will move to the another place.                                                          
-So in the whole day we are basically, you know, the running in the whole Milan that for finding the orders.                                                                   
+                           
+So in the whole day we are basically, you know, the running in the whole Milan that for finding the orders.                                                                              
+
 So this is the thing in the lunch time we have a little bit of work                   and like you know, like 12 to midday, 12:00 to 2:00 we have the work.                     
 So two to six we don't have the much work.  ")
 
@@ -185,11 +240,14 @@ So two to six we don't have the much work.  ")
 
 <audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_04.mp3"autoplay>
 
-(live: 37500ms)[(goto: "ROUTE_1_05")]
+(live: 38000ms)[(goto: "ROUTE_1_05")]
 
 
 :: ROUTE_1_05 {"position":"975,700","size":"100,100"}
-(set: $typewriterText to "So we are, you know, finding the order and in the evening we have the comfortable work that you know,                                   we can whenever you will deliver the one order so you can get the another order,                                        you know, like after 2-3 minutes or sometime you know, if it's busy, the zone is busy.                                 So you can you know, get the order straight away.                        Whenever you will deliver the 1st order to 2nd order will come straight away.")
+(set: $typewriterText to "So we are, you know, finding the order and in the evening we have the comfortable work that you know,                                   we can whenever you will deliver the one order so you can get the another order,                                        you know, like after 2-3 minutes or sometime you know, if it's busy, the zone is busy.                                 
+
+So you can you know, get the order straight away.                        
+Whenever you will deliver the 1st order to 2nd order will come straight away.")
 
 {
   
@@ -216,295 +274,15 @@ So two to six we don't have the much work.  ")
 
 <audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_05.mp3"autoplay>
 
-(live: 33000ms)[(goto: "BELL 1")]
-
-
-:: ROUTE_1_MAP_1 {"position":"225,825","size":"100,100"}
-(link: "<img src=https://i.ibb.co/rKM9xqdH/map.png
-width=300>" )[(goto-url: 'https://www.google.com/maps/dir/?api=1&destination=GiardinoAmbrogioFogar&destination_place_id=ChIJlbqibPzDhkcRv5B1fW4DDQE&travelmode=bicycling')]
-
-(live: 10s)[(goto: "SETUP_9")]
-
-
-:: SETUP_1 {"position":"250,100","size":"100,100"}
-(set: $typewriterText to "Welcome!                    
-Before you start your journey, here are some quick tips                       ")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 6000ms)[(goto: "SETUP_2")]
-
-
-:: SETUP_2 {"position":"400,100","size":"100,100"}
-(set: $typewriterText to "Our organisation will provide you with a phone holder; 
-               attach it to your bike.          
-               then tap here             
-                          ↓
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/GvJgSzQS/Riders-Bike-animation.gif
-width=450>" )[(go-to: 'SETUP_3')]
-      ]
-    ]
-}
-
-
-:: SETUP_3 {"position":"550,100","size":"100,100"}
-(set: $typewriterText to "Connect your headphones to your phone.                      
-Check that they work with your favourite song.    
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/3m1z9M0S/earphones.png
-width=200>" )[(go-to: 'SETUP_4')]
-      ]
-    ]
-}
-
-
-:: SETUP_4 {"position":"700,100","size":"100,100"}
-(set: $typewriterText to "If everything works, you can start navigating our app!
-           Here is a practical guide to use it.")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 8000ms)[(goto: "SETUP_5")]
-
-
-:: SETUP_5 {"position":"850,100","size":"100,100"}
-(set: $typewriterText to "If you get lost at anytime, please call this phone number   
-
-+39 333 361 6664            
-
-
-copy it and save it
-before tapping on the phone icon
-
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/4wJRgq9w/phone.png
-width=200>" )[(goto: "SETUP_6")]
-      ]
-    ]
-}
-
-
-:: SETUP_6 {"position":"1000,100","size":"100,100"}
-(set: $typewriterText to "Navigating within this interface you will find written directions and maps.                       
-Once you tap on the map you will be redirected to your Maps app for directions.                   ")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)[
-      (stop:)
-    ]
-  ]
-}
-(live: 9s)[(goto: "SETUP_7")]
-
-
-:: SETUP_7 {"position":"250,225","size":"100,100"}
-(set: $typewriterText to "Follow them carefully.
-Then when you get to destination, please navigate back to the app
-and wait a few seconds.
-                      
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/rKM9xqdH/map.png
-width=200>" )[(goto-url: 'https://www.google.com/maps/dir/?api=1&destination=PTA GenovaFS&destination_place_id=ChIJIT3P3_rDhkcRuw4D2gcgttc&travelmode=bicycling ')]
-      ]
-    ]
-}
-
-(live: 25s)[(goto: "SETUP_8")]
-
-
-:: SETUP_8 {"position":"400,225","size":"100,100"}
-(set: $typewriterText to "That's great! Now you are ready to go online.
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200>" )[(go-to: 'GO ONLINE')]
-      ]
-    ]
-}
-
-
-:: SETUP_9 {"position":"375,825","size":"100,100"}
-(set: $typewriterText to "Are you ready?
-")
-
-{
-  
-  (set: $typewriterPos to 1)
-
-
-  |typewriterOutput>[]
-
-
-  (live: 40ms)[
-
-  
-    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
-
-  
-    (set: $typewriterPos to it + 1)
-
-   
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200>" )[(go-to: 'ROUTE_1_06')]
-      ]
-    ]
-}
+(live: 32000ms)[(goto: "BELL 1")]
 
 
 :: ROUTE_1_06 {"position":"525,825","size":"100,100"}
 (set: $typewriterText to "From six years I'm here.                         Yeah, from six years.                                       
 In 2018, I came here in Italy.                                                                             
 
-Yeah, first I came in Milano.                            Yeah, that's my first city, Milan. 
+Yeah, first I came in Milano.                                                               
+Yeah, that's my first city, Milan. 
 ")
 
 {
@@ -536,11 +314,12 @@ Yeah, first I came in Milano.                            Yeah, that's my first c
 
 
 :: ROUTE_1_07 {"position":"675,825","size":"100,100"}
-(set: $typewriterText to "The natural beauty      in Italy.    It's amazing.                                                          
-Also, you know, Italy is a historical country.                                                                             
-So wherever you will go, like Milan, like Como,                      like Torino, Bologna, Roma            or Sicily, wherever you will go, you can find the history,                          the old history.                                           
+(set: $typewriterText to "The natural beauty      in Italy.    It's amazing.                                                                                                     
+Also, you know, Italy is a historical country.                                                                                             
+So wherever you will go, like Milan, like Como,                              like Torino, Bologna, Roma                 or Sicily, wherever you will go, you can find the history,                          the old history.                                           
 So also it's naturally very rich.                                             
-This is very rich country by the nature.                                You can find the greenery, you can find the trees, you can find the, you know, different things.                            
+This is very rich country by the nature.                                
+You can find the greenery, you can find the trees, you can find the, you know, different things.                            
 And especially the Italian people, they are very good. 
 
 ")
@@ -576,7 +355,7 @@ And especially the Italian people, they are very good.
 :: ROUTE_1_08 {"position":"825,825","size":"100,100"}
 (set: $typewriterText to "Very, you know,                                                            I'm saying to my friends who are living, you know, in different countries.                           So I'm saying that, you know,                                            if you want to see the humanity in the world, you can see in Italy,                                          the Italian people, they respect.               
 Of course, we face something, you know, sometimes we face the some rude people as well but,                        you know, that Italian people are very good.                                
-They are very gentlemen.                                   
+They are very gentlemen.                          
 They are very good, nice people.
  
 
@@ -607,14 +386,15 @@ They are very good, nice people.
 
 <audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_08.mp3"autoplay>
 
-(live: 30500ms)[(goto: "ROUTE_1_09")]
+(live: 31000ms)[(goto: "ROUTE_1_09")]
 
 
 :: ROUTE_1_09 {"position":"975,825","size":"100,100"}
 (set: $typewriterText to "In Urdu language, I can say that it's the Kudrati Hosan.                                                  
 The Kudrati Hosan,                  the beauty of the nature. Yeah.                                   
 Because you know, if you will find the,            you know, trees or green trees or, you know,                    the uphill, downhill.                                    
-Basically it's make the nature                         not any person you know can,               you know simply he can build                the uphill or downhill or you know,                 these sorts of things.                            It's built by nature.
+Basically it's make the nature                         not any person you know can,               you know simply he can build                the uphill or downhill or you know,                 these sorts of things.                            
+It's built by nature.
 ")
 
 {
@@ -680,7 +460,9 @@ Basically it's make the nature                         not any person you know c
 :: ROUTE_1_11 {"position":"375,950","size":"100,100"}
 (set: $typewriterText to "It's like paradise on Earth,                           Kashmir has been called a paradise enough.                      
 So it's like, you know, same like, you know, Switzerland, if you will see Switzerland, it's more beautiful than Switzerland.                                                                        
-But you know, during the war, everything was, you know, destroyed.                                          So because these two countries,                                       they can't build the state of Kashmir. 
+
+But you know, during the war, everything was, you know, destroyed.                                          
+So because these two countries,                                       they can't build the state of Kashmir. 
 ")
 
 {
@@ -713,6 +495,7 @@ But you know, during the war, everything was, you know, destroyed.              
 
 :: ROUTE_1_12 {"position":"525,950","size":"100,100"}
 (set: $typewriterText to "So it's really naturally very beautiful. Kashmir is naturally very beautiful.                                                        
+
 You can see the greenery,                               you can see the trees. You can see the like,                         you know, the sea, you can see the river                                     and ignore the very beautiful nature in Kashmir you can find.
 ")
 
@@ -747,6 +530,7 @@ You can see the greenery,                               you can see the trees. Y
 :: ROUTE_1_13 {"position":"675,950","size":"100,100"}
 (set: $typewriterText to "Aza Aza, Jammu                    in Kashmir, so cities,                          Hajira, Ravla code, Yeah.                                                   
 Where recently you can see that, you know,                  the war between India and Pakistan.                             
+
 So I'm exactly in the borderline of India.
 ")
 
@@ -776,6 +560,42 @@ So I'm exactly in the borderline of India.
 <audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_13.mp3"autoplay>
 
 (live: 18000ms)[(goto: "ROUTE_1_14")]
+
+
+:: ROUTE_1_14 {"position":"825,950","size":"100,100"}
+(set: $typewriterText to "                I have My family.       I have my wife, my small daughter, and I have my mother, my brothers, sisters.                                                                                                                                                                                                                          
+It’s better but, you know, in the recent conflict                                                     between India and Pakistan,                           the war conflict                                                                                                                               the system was, you know, totally terrifying.                                                      
+
+So it's quite,           you know,               very dangerous for us,                                 especially for the Kashmiri            because India and Pakistan both are fighting with each other. 
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_14.mp3"autoplay>
+
+(live: 39000ms)[(goto: "ROUTE_1_15")]
 
 
 :: ROUTE_1_15 {"position":"975,950","size":"100,100"}
@@ -811,10 +631,11 @@ going to be killed.
 (live: 9000ms)[(goto: "BELL 2")]
 
 
-:: ROUTE_1_14 {"position":"825,950","size":"100,100"}
-(set: $typewriterText to "                I have My family.       I have my wife, my small daughter, and I have my mother, my brothers, sisters.                                                                                                                     
-It’s better but, you know, in the recent conflict                                   between India and Pakistan,                           the war conflict                                                         the system was, you know, totally terrifying.                 
-So it's quite,                                  you know,               very dangerous for us,                                 especially for the Kashmiri                 because India and Pakistan both are fighting with each other. 
+:: ROUTE_1_16 {"position":"525,1075","size":"100,100"}
+(set: $typewriterText to "       It's                               basically it's the self-employment and then it's more comfortable for me that,                      you know, I can start work with my own timing and I don't have any boss.                                                                      
+So this is the main thing.                                                           So I think it's more better because when you when you work with the under the control of the boss.                                                          
+So it's a bit, you know, hard to work because you know, the,                                                                          
+that you know, you are working in the under the pressure. 
 
 ")
 
@@ -841,14 +662,17 @@ So it's quite,                                  you know,               very dan
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_14.mp3"autoplay>
+<audio src="https://ia800908.us.archive.org/13/items/route-1-20/Route%201_16.mp3"autoplay>
 
-(live: 39000ms)[(goto: "ROUTE_1_15")]
+(live: 36000ms)[(goto: "ROUTE_1_17")]
 
 
-:: BELL 1 {"position":"1100,700","size":"100,100"}
-(set: $typewriterText to "There’s an order for you.                        
-When you get there, come back to the app.
+:: ROUTE_1_17 {"position":"675,1075","size":"100,100"}
+(set: $typewriterText to "So                          you know that my boss is, you know, watching me and like,                 you know something,                         
+but it's under the control of someone working. 
+It's hard.                                  
+So when you will do the self-employment or you when you have the on work,            
+so you are feeling more comfortable. 
 ")
 
 {
@@ -868,18 +692,25 @@ When you get there, come back to the app.
     (set: $typewriterPos to it + 1)
 
    
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200>" )[(go-to: 'ROUTE_1_MAP_1')]
-      ]
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
     ]
+  ]
 }
 
-(live: 25s)[(goto: "SETUP_9")]
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_17.mp3"autoplay>
+
+(live: 16000ms)[(goto: "ROUTE_1_18")]
 
 
-:: BELL 2 {"position":"1100,950","size":"100,100"}
-(set: $typewriterText to "Now focus on the road, someone is waiting for you.
+:: ROUTE_1_18 {"position":"825,1075","size":"100,100"}
+(set: $typewriterText to "You can talk with anyone or you can,                               you know, you can do whatever you want.                                         
+If, if I want to go somewhere, for example, I came here.                               
+So if I want to close my application, I want to close my work so I can close easily.                                                              
+But if I will work under the control of the boss it's very hard to leave the job.                                      
+So these are the main things that, you know, I like to work this one by, you know, it's, it's not like a,                                                                             
+it's not much good,                but it's just for my flexibility and work.
+
 ")
 
 {
@@ -899,24 +730,288 @@ width=200>" )[(go-to: 'ROUTE_1_MAP_1')]
     (set: $typewriterPos to it + 1)
 
    
-    (if: $typewriterPos is $typewriterText's length + 1)  [
-      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
-width=200>" )[(go-to: 'ROUTE_1_MAP_1')]
-      ]
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
     ]
+  ]
 }
 
-(live: 25s)[(goto: "SETUP_9")]
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_18.mp3"autoplay>
+
+(live: 35000ms)[(goto: "ROUTE_1_19")]
 
 
-:: ROUTE_1_MAP_2 {"position":"225,1100","size":"100,100"}
+:: ROUTE_1_19 {"position":"975,1075","size":"100,100"}
+(set: $typewriterText to "Yeah, there is many negative things                           because on the road we are really not safe                                                   because, you know, in the rain, especially these two wheels,                               
+it's very hard to deliver or it's very hard to ride the bicycle.                                                     
+So in last, in January 19th, I had the accident. Yeah.                                
+So the one person, he suddenly opened the the door of the car                               and I was hit with the car.
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_19.mp3"autoplay>
+
+(live: 37000ms)[(goto: "ROUTE_1_20")]
+
+
+:: ROUTE_1_20 {"position":"375,1200","size":"100,100"}
+(set: $typewriterText to " I had my injury here in this side.                                
+And then, you know, the ambulance came and they take me to the hospital and, you know, 8 or 9 days I was at home, I couldn't come in the park.                                                            
+So these sorts of things, of course we are facing, we are on the road.                          
+So the most, you know, the, the parked car, the, the people who suddenly open the door, that's very dangerous.                                  
+Many of my friends, you know, they the same, you know, they face the accident                                                                                               suddenly opening the, the door of the car.                                                                   
+So this is also, you know, it's a big trouble for us when we when we are in the rain.                                   
+You can see that, you know, the, the some people are there very overspeed. 
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_20.mp3"autoplay>
+
+(live: 47000ms)[(goto: "ROUTE_1_21")]
+
+
+:: ROUTE_1_21 {"position":"525,1200","size":"100,100"}
+(set: $typewriterText to "And then, you know, over four or five riders                                                          I think from last two years they died.                                             
+Yeah, yeah, during the work they died.                                                 
+One was in, in, in end of December, in last December.                                                               
+He was, you know, he died near Corso Lodi.                    
+
+And before 2-3 months, you know, in the traffic lights, so the two riders, they were, you know, they died.                                                                
+So these sorts of things, you know,                                  we are facing very complicated and very hard during the ride.
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_21.mp3"autoplay>
+
+(live: 39000ms)[(goto: "ROUTE_1_22")]
+
+
+:: ROUTE_1_22 {"position":"675,1200","size":"100,100"}
+(set: $typewriterText to "Yeah of course, when we go to deliver                                  door to door                 the foods and groceries.                                                 
+So it's always for me to very memorable that when I seen the people,                       they are, you know, meeting us with a smile                        and they they saying us the thanks that thanks for the delivering the orders to.                                                  
+
+So these sorts of things is very,                                   you know,                        I'm feeling very happy the people who are appreciated.                                
+
+But you know, some people are very rude, but you know, very less people, they are very rude in this work.                                     
+So we are sometimes we are working in the rain, so we are totally wet. 
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_22.mp3"autoplay>
+
+(live: 46000ms)[(goto: "ROUTE_1_23")]
+
+
+:: ROUTE_1_23 {"position":"825,1200","size":"100,100"}
+(set: $typewriterText to "And then, you know, they saying that no,                         you have to come upstairs and you have to deliver upstairs.                       
+So it's, you know, little bit, you know, complicated sometime. 
+                                                                 
+But you know, the, the many people they are very good.                                         
+When it's raining, we are wet.                                                         
+They know that, you know, the rider is coming and he's wet with the cloth.                     
+So they already come to the main gate when receive the orders. 
+
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_23.mp3"autoplay>
+
+(live: 24000ms)[(goto: "ROUTE_1_24")]
+
+
+:: ROUTE_1_24 {"position":"975,1200","size":"100,100"}
+(set: $typewriterText to "So when any person can smile.                                                            
+So I'm feeling very happy that at least,                                    you know, give a good smile and say thanks to us.
+                                                                
+So this is, you know, memorable for me.
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)
+    ]
+  ]
+}
+
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_24.mp3"autoplay>
+
+(live: 18000ms)[(goto: "BELL 3")]
+
+
+:: ROUTE_1_MAP_1 {"position":"225,825","size":"100,100"}
+(link: "<img src=https://i.ibb.co/rKM9xqdH/map.png
+width=300>" )[(goto-url: 'https://www.google.com/maps/dir/?api=1&destination=GiardinoAmbrogioFogar&destination_place_id=ChIJlbqibPzDhkcRv5B1fW4DDQE&travelmode=bicycling')]
+
+(live: 10s)[(goto: "SETUP_9")]
+
+
+:: ROUTE_1_MAP_2 {"position":"225,1075","size":"100,100"}
 (link: "<img src=https://i.ibb.co/rKM9xqdH/map.png
 width=300>" )[(goto-url: 'https://www.google.com/maps/dir/?api=1&destination=Piazza24Maggio&destination_place_id=EiJQaWF6emEgMjQgTWFnZ2lvLCBNaWxhbm8gTUksIEl0YWx5Ii4qLAoUChIJWaF1agfEhkcROB9ry4HiRpQSFAoSCT2joctMwYZHEZAae21W3jCm&travelmode=bicycling')]
 
 (live: 10s)[(goto: "SETUP_10")]
 
 
-:: SETUP_10 {"position":"375,1100","size":"100,100"}
+:: SETUP_1 {"position":"425,75","size":"100,100"}
+(set: $typewriterText to "Welcome!                    
+Before you start your journey, here are some quick tips            
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:) 
+      [[>>>->SETUP_2]]
+    ]
+  ]
+}
+
+
+:: SETUP_10 {"position":"375,1075","size":"100,100"}
 (set: $typewriterText to "Are you ready?
 ")
 
@@ -945,6 +1040,252 @@ width=200>" )[(go-to: 'ROUTE_1_16')]
 }
 
 
-:: ROUTE_1_16 {"position":"525,1100","size":"100,100"}
+:: SETUP_2 {"position":"575,75","size":"100,100"}
+(set: $typewriterText to "Our organisation will provide you a phone holder; 
+               attach it to your bike.                       
+        then tap here        
+      ↓              
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/GvJgSzQS/Riders-Bike-animation.gif
+width=450>" )[(go-to: 'SETUP_3')]
+      ]
+    ]
+}
+
+
+:: SETUP_3 {"position":"725,75","size":"100,100"}
+(set: $typewriterText to "Connect your headphones to your phone.                      
+Check that they work by click below.
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/3m1z9M0S/earphones.png
+width=200>" )[<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3"autoplay>]
+(live:9s)[ If everything works we can [[MOVE ON ->SETUP_4]]]
+      ]
+    ]
+}
+
+
+:: SETUP_4 {"position":"875,75","size":"100,100"}
+(set: $typewriterText to "If everything works, you can start navigating our app!
+           Here is a practical guide to use it.
+           
+           ")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)[[LET'S START->SETUP_5]]
+    ]
+  ]
+}
+
+
+:: SETUP_5 {"position":"1025,75","size":"100,100"}
+(set: $typewriterText to "If you get lost at anytime, please call this phone number   
+
++39 333 361 6664            
+
+copy it and save it
+before tapping on the phone icon
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/4wJRgq9w/phone.png
+width=200>" )[(goto: "SETUP_6")]
+      ]
+    ]
+}
+
+
+:: SETUP_6 {"position":"1175,75","size":"100,100"}
+(set: $typewriterText to "Navigating within this interface you will find written directions and maps.                       
+Once you tap on the map you will be redirected to your Maps app for directions.         
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)[
+      (stop:)[[OK->SETUP_7]]
+    ]
+  ]
+}
+
+
+:: SETUP_7 {"position":"1325,75","size":"100,100"}
+(set: $typewriterText to "Follow them carefully.
+Then when you get to destination, please navigate back to the app
+and wait a few seconds.
+                      
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/rKM9xqdH/map.png
+width=200>" )[(goto-url: 'https://www.google.com/maps/dir/?api=1&destination=PTA GenovaFS&destination_place_id=ChIJIT3P3_rDhkcRuw4D2gcgttc&travelmode=bicycling ')]
+      ]
+    ]
+}
+
+(live: 25s)[(goto: "SETUP_8")]
+
+
+:: SETUP_8 {"position":"1150,225","size":"100,100"}
+(set: $typewriterText to "That's great! Now you are ready!
+
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)[[GO ONLINE->GO ONLINE]]
+      ]
+    ]
+}
+
+
+:: SETUP_9 {"position":"375,825","size":"100,100"}
+(set: $typewriterText to "Are you ready?
+")
+
+{
+  
+  (set: $typewriterPos to 1)
+
+
+  |typewriterOutput>[]
+
+
+  (live: 40ms)[
+
+  
+    (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+  
+    (set: $typewriterPos to it + 1)
+
+   
+    (if: $typewriterPos is $typewriterText's length + 1)  [
+      (stop:)(link: "<img src=https://i.ibb.co/Xf3bg92V/LOGO-WHITE.png
+width=200>" )[(go-to: 'ROUTE_1_06')]
+      ]
+    ]
+}
 
 
