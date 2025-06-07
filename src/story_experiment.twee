@@ -100,7 +100,9 @@ width=200>
 width=200>
 <img src="https://i.ibb.co/YBGgFPdj/vecteezy-transparent-loading-spinner-video-29870031.gif "width=150>
 
-(live:4s)[(go-to: 'SETUP_1')]
+Tap to start the experience.
+
+(link: "Start")[(set: $audioReady to true)(goto: "SETUP_1")]
 
 
 :: ROUTE_1_01 {"position":"375,700","size":"100,100"}
@@ -131,7 +133,7 @@ I'm like nearly 40 year old.")
   ]
 }
 
-<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3"autoplay>
+<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3"autoplay preload="auto" playsinline>
 
 (live: 8500ms)[(goto: "ROUTE_1_02")]
 
@@ -166,7 +168,7 @@ So basically I'm from Kashmir, Pakistan. ")
   ]
 }
 
-<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_02.mp3"autoplay>
+<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_02.mp3"autoplay preload="auto" playsinline>
 
 (live: 19500ms)[(goto: "ROUTE_1_03")]
 
@@ -201,7 +203,7 @@ So the whole day like you know this.                        So we are basically 
   ]
 }
 
-<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_03.mp3"autoplay>
+<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_03.mp3"autoplay preload="auto" playsinline>
 
 (live: 36500ms)[(goto: "ROUTE_1_04")]
 
@@ -238,7 +240,7 @@ So two to six we don't have the much work.  ")
   ]
 }
 
-<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_04.mp3"autoplay>
+<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_04.mp3"autoplay preload="auto" playsinline>
 
 (live: 38000ms)[(goto: "ROUTE_1_05")]
 
@@ -272,7 +274,7 @@ Whenever you will deliver the 1st order to 2nd order will come straight away.")
   ]
 }
 
-<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_05.mp3"autoplay>
+<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_05.mp3"autoplay preload="auto" playsinline>
 
 (live: 32000ms)[(goto: "BELL 1")]
 
@@ -308,7 +310,7 @@ Yeah, that's my first city, Milan.
   ]
 }
 
-<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_06.mp3"autoplay>
+<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_06.mp3"autoplay preload="auto" playsinline>
 
 (live: 20000ms)[(goto: "ROUTE_1_07")]
 
@@ -347,7 +349,7 @@ And especially the Italian people, they are very good.
   ]
 }
 
-<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_07.mp3"autoplay>
+<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_07.mp3"autoplay preload="auto" playsinline>
 
 (live: 40000ms)[(goto: "ROUTE_1_08")]
 
@@ -384,7 +386,7 @@ They are very good, nice people.
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_08.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_08.mp3"autoplay preload="auto" playsinline>
 
 (live: 31000ms)[(goto: "ROUTE_1_09")]
 
@@ -420,7 +422,7 @@ It's built by nature.
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_09.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_09.mp3"autoplay preload="auto" playsinline>
 
 (live: 34000ms)[(goto: "ROUTE_1_10")]
 
@@ -452,7 +454,7 @@ It's built by nature.
   ]
 }
 
-<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_10.mp3"autoplay>
+<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_10.mp3"autoplay preload="auto" playsinline>
 
 (live: 19000ms)[(goto: "ROUTE_1_11")]
 
@@ -488,7 +490,7 @@ So because these two countries,                                       they can't
   ]
 }
 
-<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_11.mp3"autoplay>
+<audio src="https://ia600902.us.archive.org/27/items/route-1-14/Route%201_11.mp3"autoplay preload="auto" playsinline>
 
 (live: 30000ms)[(goto: "ROUTE_1_12")]
 
@@ -522,7 +524,7 @@ You can see the greenery,                               you can see the trees. Y
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_12.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_12.mp3"autoplay preload="auto" playsinline>
 
 (live: 22000ms)[(goto: "ROUTE_1_13")]
 
@@ -557,7 +559,7 @@ So I'm exactly in the borderline of India.
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_13.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_13.mp3"autoplay preload="auto" playsinline>
 
 (live: 18000ms)[(goto: "ROUTE_1_14")]
 
@@ -593,7 +595,7 @@ So it's quite,           you know,               very dangerous for us,         
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_14.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_14.mp3"autoplay preload="auto" playsinline>
 
 (live: 39000ms)[(goto: "ROUTE_1_15")]
 
@@ -626,7 +628,7 @@ going to be killed.
   ]
 }
 
-<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_15.mp3"autoplay>
+<audio src="https://ia800902.us.archive.org/27/items/route-1-14/Route%201_15.mp3"autoplay preload="auto" playsinline>
 
 (live: 9000ms)[(goto: "BELL 2")]
 
@@ -662,7 +664,7 @@ that you know, you are working in the under the pressure.
   ]
 }
 
-<audio src="https://ia800908.us.archive.org/13/items/route-1-20/Route%201_16.mp3"autoplay>
+<audio src="https://ia800908.us.archive.org/13/items/route-1-20/Route%201_16.mp3"autoplay preload="auto" playsinline>
 
 (live: 36000ms)[(goto: "ROUTE_1_17")]
 
@@ -698,7 +700,7 @@ so you are feeling more comfortable.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_17.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_17.mp3"autoplay preload="auto" playsinline>
 
 (live: 16000ms)[(goto: "ROUTE_1_18")]
 
@@ -736,7 +738,7 @@ it's not much good,                but it's just for my flexibility and work.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_18.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_18.mp3"autoplay preload="auto" playsinline>
 
 (live: 35000ms)[(goto: "ROUTE_1_19")]
 
@@ -771,7 +773,7 @@ So the one person, he suddenly opened the the door of the car                   
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_19.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_19.mp3"autoplay preload="auto" playsinline>
 
 (live: 37000ms)[(goto: "ROUTE_1_20")]
 
@@ -810,7 +812,7 @@ You can see that, you know, the, the some people are there very overspeed.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_20.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_20.mp3"autoplay preload="auto" playsinline>
 
 (live: 47000ms)[(goto: "ROUTE_1_21")]
 
@@ -848,7 +850,7 @@ So these sorts of things, you know,                                  we are faci
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_21.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_21.mp3"autoplay preload="auto" playsinline>
 
 (live: 39000ms)[(goto: "ROUTE_1_22")]
 
@@ -887,7 +889,7 @@ So we are sometimes we are working in the rain, so we are totally wet.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_22.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_22.mp3"autoplay preload="auto" playsinline>
 
 (live: 46000ms)[(goto: "ROUTE_1_23")]
 
@@ -927,7 +929,7 @@ So they already come to the main gate when receive the orders.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_23.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_23.mp3"autoplay preload="auto" playsinline>
 
 (live: 24000ms)[(goto: "ROUTE_1_24")]
 
@@ -962,7 +964,7 @@ So this is, you know, memorable for me.
   ]
 }
 
-<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_24.mp3"autoplay>
+<audio src="https://ia600908.us.archive.org/13/items/route-1-20/Route%201_24.mp3"autoplay preload="auto" playsinline>
 
 (live: 18000ms)[(goto: "BELL 3")]
 
@@ -1097,7 +1099,7 @@ Check that they work by click below.
    
     (if: $typewriterPos is $typewriterText's length + 1)  [
       (stop:)(link: "<img src=https://i.ibb.co/3m1z9M0S/earphones.png
-width=200>" )[<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3"autoplay>]
+width=200>" )[<audio src="https://dn720701.ca.archive.org/0/items/route-1-14/Route%201_01.mp3"autoplay preload="auto" playsinline>]
 (live:9s)[ If everything works we can [[MOVE ON ->SETUP_4]]]
       ]
     ]
