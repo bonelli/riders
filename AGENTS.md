@@ -11,7 +11,7 @@ export PATH="$(pwd)/bin:$PATH"
 
 ## Workflow
 - **Decompile**: `scripts/decompile.sh` extracts `index.html` into `src/story.twee`.
-- **Compile**: `scripts/compile.sh` builds `dist/index.html` from `src/story.twee` using the latest Harlowe format in `bin/storyformats`. The compiled file is tracked in git so others can compare the output.
-- **Cleanup**: `scripts/cleanup.sh` removes the `dist/` directory. Running it will delete the tracked `dist/index.html`, so recompile afterwards if needed.
+- **Compile**: `scripts/compile.sh [input.twee] [output.html]` builds the HTML file from the specified Twee source (defaults to `src/story.twee` and `dist/index.html`). The compiled output is tracked in git so others can compare the result.
+- **Cleanup**: `scripts/cleanup.sh` removes the `dist/` directory. Running it will delete any tracked HTML files there, so recompile afterwards if needed.
 
 Always run these scripts instead of manual commands.
