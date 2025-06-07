@@ -2,7 +2,43 @@
 Hello Twine
 
 :: Start
-Hello World
+<<goto "Map">>
+
+
+:: Map
+<div id="map" style="height:400px"></div>
+<<script>>
+var map = L.map('map');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+const coords = [
+  [45.469749, 9.177232],
+  [45.467954, 9.176783],
+  [45.467605, 9.179344],
+  [45.467811, 9.181364],
+  [45.467965, 9.182534],
+  [45.468607, 9.183137],
+  [45.469339, 9.189987],
+  [45.470763, 9.193483],
+  [45.472735, 9.195862],
+  [45.472506, 9.201141],
+  [45.474470, 9.205105]
+];
+const route = L.polyline(coords, { color: 'blue' }).addTo(map);
+map.fitBounds(route.getBounds());
+if (navigator.geolocation) {
+  navigator.geolocation.watchPosition(function (pos) {
+    const lat = pos.coords.latitude,
+          lon = pos.coords.longitude;
+    if (!window.userMarker) {
+      window.userMarker = L.marker([lat, lon]).addTo(map);
+    } else {
+      window.userMarker.setLatLng([lat, lon]);
+    }
+  });
+}
+<</script>>
 
 :: StoryData
 {
